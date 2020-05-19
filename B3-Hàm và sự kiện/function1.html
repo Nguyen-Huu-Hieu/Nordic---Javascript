@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function</title>
+</head>
+<body>
+	<script>
+		function createList(from,to,label){
+			document.write('<select>');
+			if(from < to){
+				for(i = from; i<=to; i++)
+					document.write('<option value="'+ i +'">'+ label +' '+ i +'</option>');
+			}
+			else {
+				for(i = from; i>=to; i--)
+					document.write('<option value="'+ i +'">'+ label +' '+ i +'</option>');
+			}
+
+			document.write('</select>'); 
+		}
+		//call function
+		createList(1,31,'Ngày');
+		createList(1,12,'Tháng')
+		createList(2020,1998,'Năm')
+		//month
+		// document.write('<select>');
+		// for(i = 1; i<=12; i++)
+		// 	document.write('<option value="'+ i +'">tháng '+ i +'</option>');
+
+		// document.write('</select>');
+	</script>
+</body>
+</html>

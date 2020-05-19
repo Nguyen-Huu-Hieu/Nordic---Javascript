@@ -1,0 +1,13 @@
+.board{
+	width: 400px;
+	height: 400px;
+	border: 1px solid blue;
+	margin: auto;
+}
+.board .card{
+	width: 46%;
+	height: 46%;
+	margin: 2%;
+	border: 5px solid red;
+	float: left;
+}

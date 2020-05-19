@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button id="login">Click me</button>
+	<p id="demo">nguyen huu hieu</p>
+	<script>
+		function changeColor(){
+			document.getElementById('demo').style.color = 'red';
+		}
+		function changeSize(){
+			document.getElementById('demo').style.fontSize = '30px';
+		}
+		// document.getElementById('login').onclick = changeColor;
+		// document.getElementById('login').onclick = changeSize;
+		document.getElementById('login').addEventListener('click',changeColor);
+		document.getElementById('login').addEventListener('click',changeSize);
+
+		document.getElementById('login').removeEventListener('click',changeColor);
+
+
+
+	</script>
+</body>
+</html>
